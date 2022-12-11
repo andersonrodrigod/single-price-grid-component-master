@@ -125,15 +125,10 @@ main {
 
 
 @media screen and (max-width: 500px) {
-    body {
-        
-    }
     main {
         display: flex;
         flex-direction: column;
         width: 300px;
-        
-        
         
     }
     
