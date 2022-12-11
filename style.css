@@ -24,17 +24,17 @@ main {
     "topic-1 topic-1"
     "topic-2 topic-3" ;
     width: 600px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin-bottom: 50px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.192);
 
 }
 
 .topic-1 {
     grid-area: topic-1;
     background-color: white;
-    padding-top: 30px;
-    padding-left: 35px;
+    padding: 30px 35px 35px 35px;
 }
 
 .topic-1 > h1 {
@@ -48,7 +48,6 @@ main {
 }
 
 .topic-1 > p {
-    margin-bottom: 35px;
     color: hsl(218, 22%, 67%);
 }
 
@@ -56,21 +55,86 @@ main {
     grid-area: topic-2;
     background-color: rgb(43, 180, 177);
     width: 300px;
-    padding-top: 35px;
-    padding-left: 35px;
-    padding-right: 30px;
+    padding: 35px 20px 30px 35px;
     color: white;
     
 }
 
 .topic-2 > h2 {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
     
+}
+
+.topic-2 > .sub {
+    display: flex;
+    padding-bottom: 10px;
+    
+}
+
+
+.topic-2 > .sub > .number {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-right: 12px;
+}
+
+
+.topic-2 > .sub > .light {
+    margin-top: 4px;
+    color: hsl(204, 43%, 93%);
+    
+}
+
+.topic-2 > p {
+    padding-bottom: 30px;
+}
+
+.topic-2 > button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding: 10px 90px 10px 90px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.37);
+}
+
+.topic-2 > button:hover {
+    background-color:hsl(59, 60%, 58%) ;
+    cursor: pointer;
 }
 
 .topic-3 {
     grid-area: topic-3;
     background-color: rgb(73, 190, 189);
+    color: white;
+    width: 300px;
+    padding: 35px 55px 30px 35px;
 }
 
+.topic-3 > h2 { 
+    padding-bottom: 13px;
+    font-size: 1.1rem;
+}
+
+.topic-3 > p {
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 150px;
+        
+        
+    }
+    
+}
