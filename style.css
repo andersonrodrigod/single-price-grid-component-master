@@ -39,6 +39,7 @@ main {
 
 .topic-1 > h1 {
     margin-bottom: 25px;
+    color: hsl(179, 62%, 43%);
 }
 
 .topic-1 > h2 {
